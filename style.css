@@ -1,0 +1,47 @@
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+/* ======================== */
+
+.container-cub {
+    padding: 150px 100px;
+    background: black;
+    
+}
+
+.cub{
+    display: flex;
+    justify-content: center;
+    background: #555;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+/* =============================== */
+
+.cub:hover::after{
+    content: "Успех!";
+    color: #43c575;
+    font-size: 2rem;
+    padding: 20vh;
+    
+}
+
+.cub:hover::before{
+    content: "";
+    width: 1000px;
+    height: 100px;
+    background: #e06a94;
+    position: absolute;
+    left: 20vw;
+    top: 3vh;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+/* ======================= */
+
